@@ -34,6 +34,9 @@ public class DialogContent extends Parent {
     @FindBy(xpath = "//div[@class=\"result\"]")
     public WebElement result;
 
+    @FindBy(xpath = "//div[@class=\"validation-summary-errors\"]")
+    public WebElement validationErrors;
+
 
     public WebElement getWebElement(String strElement) {
         switch (strElement) {

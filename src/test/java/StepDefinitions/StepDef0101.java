@@ -7,6 +7,7 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class StepDef0101 {
 
@@ -37,5 +38,13 @@ public class StepDef0101 {
     @Then("Success message should be displayed")
     public void successMessageShouldBeDisplayed() {
         dc.verifyContainsText(dc.result,"completed");
+    }
+
+
+
+    @Then("Error message should be displayed")
+    public void errorMessageShouldBeDisplayed() {
+        dc.wait.until(ExpectedConditions.visibilityOf(dc.validationErrors));
+        dc.verifyContainsText(dc.validationErrors,"already exists");
     }
 }
