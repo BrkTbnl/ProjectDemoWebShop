@@ -37,6 +37,9 @@ public class DialogContent extends Parent {
     @FindBy(xpath = "//div[@class=\"validation-summary-errors\"]")
     public WebElement validationErrors;
 
+    @FindBy(xpath = "//input[@class=\"button-1 login-button\"]")
+    public WebElement loginButton;
+
 
     public WebElement getWebElement(String strElement) {
         switch (strElement) {

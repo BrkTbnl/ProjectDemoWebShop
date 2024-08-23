@@ -13,6 +13,9 @@ public class TopNavigation extends Parent{
     @FindBy(xpath = "//a[@href=\"/register\"]")
     public WebElement registerButton;
 
+    @FindBy(xpath = "//a[@href=\"/login\"]")
+    public WebElement loginButton;
+
 
     public WebElement getWebElement(String strElement) {
         switch (strElement){
