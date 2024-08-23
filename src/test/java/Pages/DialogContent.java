@@ -40,6 +40,8 @@ public class DialogContent extends Parent {
     @FindBy(xpath = "//input[@class=\"button-1 login-button\"]")
     public WebElement loginButton;
 
+    @FindBy(xpath = "(//a[@href=\"/logout\"])[1]")
+    public WebElement logoutButton;
 
     public WebElement getWebElement(String strElement) {
         switch (strElement) {
