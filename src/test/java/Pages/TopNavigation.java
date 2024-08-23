@@ -10,6 +10,8 @@ public class TopNavigation extends Parent{
         PageFactory.initElements(GWD.getDriver(), this);
     }
 
+    @FindBy(xpath = "//a[@href=\"/register\"]")
+    public WebElement registerButton;
 
 
     public WebElement getWebElement(String strElement) {
