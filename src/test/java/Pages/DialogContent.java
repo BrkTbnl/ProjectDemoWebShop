@@ -31,6 +31,8 @@ public class DialogContent extends Parent {
     @FindBy(xpath="//input[@id=\"register-button\"]")
     public WebElement registerConfirmButton;
 
+    @FindBy(xpath = "//div[@class=\"result\"]")
+    public WebElement result;
 
 
     public WebElement getWebElement(String strElement) {

@@ -41,7 +41,7 @@ public class GWD {
         }
 
         threadDriver.get().manage().window().maximize();
-        threadDriver.get().manage().timeouts().pageLoadTimeout(Duration.ofSeconds(100));
+        threadDriver.get().manage().timeouts().pageLoadTimeout(Duration.ofSeconds(25));
 
         return threadDriver.get();
     }
