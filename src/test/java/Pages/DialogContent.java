@@ -58,7 +58,7 @@ public class DialogContent extends Parent {
     @FindBy(xpath = "//button[@id=\"checkout\"]")
     public WebElement checkoutButton;
 
-    @FindBy(xpath = "")
+    @FindBy(xpath = "//select[@id=\"BillingNewAddress_CountryId\"]")
     public WebElement countrySelectBox;
 
     @FindBy(xpath = "//input[@id=\"BillingNewAddress_City\"]")
@@ -90,6 +90,9 @@ public class DialogContent extends Parent {
 
     @FindBy(xpath = "//input[@class=\"button-1 confirm-order-next-step-button\"]")
     public WebElement confirmOrderButton;
+
+    @FindBy(xpath = "(//div[@class=\"section order-completed\"]/div)[1]")
+    public WebElement orderStatusMessageLabel;
 
 
 
