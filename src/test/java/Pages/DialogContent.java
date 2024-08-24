@@ -40,7 +40,7 @@ public class DialogContent extends Parent {
     @FindBy(xpath = "//input[@class=\"button-1 login-button\"]")
     public WebElement loginButton;
 
-    @FindBy(xpath = "//a[@href=\"/build-your-own-expensive-computer-2\"]")
+    @FindBy(xpath = "(//input[@class=\"button-2 product-box-add-to-cart-button\"])[3]")
     public WebElement computerSelectButton;
 
     @FindBy(xpath = "(//input[@id=\"add-to-cart-button-74\"])")

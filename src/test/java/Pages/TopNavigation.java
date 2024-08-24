@@ -22,7 +22,7 @@ public class TopNavigation extends Parent{
     @FindBy(xpath = "(//a[@href=\"/logout\"])[1]")
     public WebElement logoutButton;
 
-    @FindBy(xpath = "//li[@id=\"topcartlink\"]")
+    @FindBy(xpath = "(//li[@id=\"topcartlink\"]/a/span)[1]")
     public WebElement ShoppingCartButton;
 
     public WebElement getWebElement(String strElement) {
