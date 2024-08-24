@@ -52,6 +52,53 @@ public class DialogContent extends Parent {
     @FindBy(xpath = "//span[@class=\"product-unit-price\"]")
     public WebElement productPriceShoppingCart;
 
+    @FindBy(xpath = "//input[@id=\"termsofservice\"]")
+    public WebElement termsOfService;
+
+    @FindBy(xpath = "//button[@id=\"checkout\"]")
+    public WebElement checkoutButton;
+
+    @FindBy(xpath = "")
+    public WebElement countrySelectBox;
+
+    @FindBy(xpath = "//input[@id=\"BillingNewAddress_City\"]")
+    public WebElement cityInput;
+
+    @FindBy(xpath = "//input[@id=\"BillingNewAddress_Address1\"]")
+    public WebElement addressInput;
+
+    @FindBy(xpath = "//input[@id=\"BillingNewAddress_ZipPostalCode\"]")
+    public WebElement zipCodeInput;
+
+    @FindBy(xpath = "//input[@id=\"BillingNewAddress_PhoneNumber\"]")
+    public WebElement phoneNumInput;
+
+    @FindBy(xpath = "(//input[@class=\"button-1 new-address-next-step-button\"])[1]")
+    public WebElement billingContinueButton;
+
+    @FindBy(xpath = "(//input[@class=\"button-1 new-address-next-step-button\"])[2]")
+    public WebElement shippingContinueButton;
+
+    @FindBy(xpath = "//input[@class=\"button-1 shipping-method-next-step-button\"]")
+    public WebElement shippingMethodContinueButton;
+
+    @FindBy(xpath = "//input[@class=\"button-1 payment-method-next-step-button\"]")
+    public WebElement paymentMethodContinueButton;
+
+    @FindBy(xpath = "//input[@class=\"button-1 payment-info-next-step-button\"]")
+    public WebElement paymentInfoContinueButton;
+
+    @FindBy(xpath = "//input[@class=\"button-1 confirm-order-next-step-button\"]")
+    public WebElement confirmOrderButton;
+
+
+
+
+
+
+
+
+
 
     public WebElement getWebElement(String strElement) {
         switch (strElement) {
