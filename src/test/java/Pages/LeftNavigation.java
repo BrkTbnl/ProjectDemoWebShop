@@ -10,7 +10,11 @@ public class LeftNavigation extends Parent{
         PageFactory.initElements(GWD.getDriver(),this);
     }
 
+    @FindBy(xpath = "(//a[@href=\"/computers\"])[3]")
+    public WebElement computerButton;
 
+    @FindBy(xpath = "(//a[@href=\"/desktops\"])[3]")
+    public WebElement desktopsButton;
 
 
 

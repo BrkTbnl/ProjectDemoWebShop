@@ -40,6 +40,18 @@ public class DialogContent extends Parent {
     @FindBy(xpath = "//input[@class=\"button-1 login-button\"]")
     public WebElement loginButton;
 
+    @FindBy(xpath = "//a[@href=\"/build-your-own-expensive-computer-2\"]")
+    public WebElement computerSelectButton;
+
+    @FindBy(xpath = "(//input[@id=\"add-to-cart-button-74\"])")
+    public WebElement addToCartButton;
+
+    @FindBy(xpath = "(//p[@class=\"content\"])")
+    public WebElement orderMessage;
+
+    @FindBy(xpath = "//span[@class=\"product-unit-price\"]")
+    public WebElement productPriceShoppingCart;
+
 
     public WebElement getWebElement(String strElement) {
         switch (strElement) {
