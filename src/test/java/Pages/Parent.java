@@ -30,7 +30,7 @@ public class Parent {
     }
 
     public void verifyContainsText(WebElement element, String text) {
-
+        wait.until(ExpectedConditions.visibilityOf(element));
         wait.until(ExpectedConditions.textToBePresentInElement(element,text));
         Assert.assertTrue(element.getText().toLowerCase().contains(text.toLowerCase()));
     }
