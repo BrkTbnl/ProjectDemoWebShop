@@ -95,7 +95,29 @@ public class DialogContent extends Parent {
     public WebElement orderStatusMessageLabel;
 
     @FindBy(xpath = "//input[@id=\"paymentmethod_1\"]")
-    public WebElement CheckPaymentMethod;
+    public WebElement paymentViaCheck;
+
+    @FindBy(xpath = "//input[@id=\"paymentmethod_2\"]")
+    public WebElement paymentViaCreditCart;
+
+    @FindBy(xpath = "//input[@id=\"CardholderName\"]")
+    public WebElement cardholderNameInput;
+
+    @FindBy(xpath = "//input[@id=\"CardNumber\"]")
+    public WebElement cardNumberInput;
+
+    @FindBy(xpath = "//select[@id=\"ExpireMonth\"]")
+    public WebElement expireMonthInput;
+
+    @FindBy(xpath = "//select[@id=\"ExpireYear\"]")
+    public WebElement expiryYearInput;
+
+    @FindBy(xpath = "//input[@id=\"CardCode\"]")
+    public WebElement cardCodeInput;
+
+    @FindBy(xpath = "//div[@class=\"validation-summary-errors\"]/ul/li")
+    public WebElement paymentErrorMessage;
+
 
 
 
