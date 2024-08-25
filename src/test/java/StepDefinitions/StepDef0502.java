@@ -47,4 +47,17 @@ public class StepDef0502 {
     public void paymentTypeShouldNotBeAccepted() {
         dc.verifyContainsText(dc.paymentErrorMessage,"Wrong card number");
     }
+
+    @And("User selects Purchase Order from the payment method section and clicks Continue")
+    public void userSelectsPurchaseOrderFromThePaymentMethodSectionAndClicksContinue() {
+        dc.myJSClick(dc.paymentViaPurchaseOrder);
+        dc.myJSClick(dc.paymentMethodContinueButton);
+    }
+
+    @When("User enters his  information and clicks on Continue")
+    public void userEntersHisInformationAndClicksOnContinue() {
+        dc.mySendKeys(dc.poNumberInput,"123456");
+        dc.myJSClick(dc.paymentInfoContinueButton);
+        dc.myJSClick(dc.confirmOrderButton);
+    }
 }
