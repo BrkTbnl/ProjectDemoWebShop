@@ -94,6 +94,9 @@ public class DialogContent extends Parent {
     @FindBy(xpath = "(//div[@class=\"section order-completed\"]/div)[1]")
     public WebElement orderStatusMessageLabel;
 
+    @FindBy(xpath = "//input[@id=\"paymentmethod_1\"]")
+    public WebElement CheckPaymentMethod;
+
 
 
 
