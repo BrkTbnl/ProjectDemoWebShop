@@ -16,6 +16,10 @@ public class LeftNavigation extends Parent{
     @FindBy(xpath = "(//a[@href=\"/desktops\"])[3]")
     public WebElement desktopsButton;
 
+    @FindBy(xpath = "(//a[@href=\"/customer/orders\"])[1]")
+    public WebElement ordersButton;
+
+
 
 
     public WebElement getWebElement(String strElement){

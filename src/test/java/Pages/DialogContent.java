@@ -124,6 +124,12 @@ public class DialogContent extends Parent {
     @FindBy(xpath = "//input[@id=\"PurchaseOrderNumber\"]")
     public WebElement poNumberInput;
 
+    @FindBy(xpath = "(//input[@class=\"button-2 order-details-button\"])[1]")
+    public WebElement orderDetails;
+
+    @FindBy(xpath = "(//div[@class=\"order-details\"]/span)[2]")
+    public WebElement orderStatus;
+
 
     public WebElement getWebElement(String strElement) {
         switch (strElement) {
