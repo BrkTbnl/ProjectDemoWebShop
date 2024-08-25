@@ -2,6 +2,7 @@ package StepDefinitions;
 
 import Pages.DialogContent;
 import io.cucumber.java.en.And;
+import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class StepDef0502 {
@@ -16,7 +17,7 @@ public class StepDef0502 {
 
     @And("User selects Check-Money Order from the payment method section and clicks Continue")
     public void userSelectsCheckMoneyOrderFromThePaymentMethodSectionAndClicksContinue() {
-        dc.myJSClick(dc.CheckPaymentMethod);
+        dc.myJSClick(dc.paymentViaCheck);
         dc.myJSClick(dc.paymentMethodContinueButton);
     }
 
@@ -24,5 +25,26 @@ public class StepDef0502 {
     public void userClicksOnContinueEachStepsAndConfirmHisOrder() {
         dc.myJSClick(dc.paymentInfoContinueButton);
         dc.myJSClick(dc.confirmOrderButton);
+    }
+
+    @And("User selects Credit Cart from the payment method section and clicks Continue")
+    public void userSelectsCreditCartFromThePaymentMethodSectionAndClicksContinue() {
+        dc.myJSClick(dc.paymentViaCreditCart);
+        dc.myJSClick(dc.paymentMethodContinueButton);
+    }
+
+    @And("User enters his cart information and clicks on Continue")
+    public void userEntersHisCartInformationAndClicksOnContinue() {
+        dc.mySendKeys(dc.cardholderNameInput,"bob tester");
+        dc.mySendKeys(dc.cardNumberInput,"1234567890123456");
+        dc.mySelectBox(dc.expireMonthInput,"10");
+        dc.mySelectBox(dc.expiryYearInput,"2025");
+        dc.mySendKeys(dc.cardCodeInput,"123");
+        dc.myJSClick(dc.paymentInfoContinueButton);
+    }
+
+    @Then("payment type should not be accepted")
+    public void paymentTypeShouldNotBeAccepted() {
+        dc.verifyContainsText(dc.paymentErrorMessage,"Wrong card number");
     }
 }
