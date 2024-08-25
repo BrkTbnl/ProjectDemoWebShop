@@ -118,14 +118,11 @@ public class DialogContent extends Parent {
     @FindBy(xpath = "//div[@class=\"validation-summary-errors\"]/ul/li")
     public WebElement paymentErrorMessage;
 
+    @FindBy(xpath = "//input[@id=\"paymentmethod_3\"]")
+    public WebElement paymentViaPurchaseOrder;
 
-
-
-
-
-
-
-
+    @FindBy(xpath = "//input[@id=\"PurchaseOrderNumber\"]")
+    public WebElement poNumberInput;
 
 
     public WebElement getWebElement(String strElement) {
