@@ -1,0 +1,1249 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"></span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Aug 27, 2024 11:09:22 PM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@RegressionTest</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Create user account negative test with using used mail</p>
+            <p class="text-sm">
+              <span>11:09:23 PM</span> / <span>00:00:13:172</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Create user account negative test with using used mail</h5>
+<span class='badge badge-success'>08.27.2024 11:09:23 PM</span>
+<span class='badge badge-danger'>08.27.2024 11:09:36 PM</span>
+<span class='badge badge-default'>00:00:13:172</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>User successfully creates an account on akakce.com</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinitions.StepDef0101.navigateToWebpage()">
+                <span>Given Navigate to Webpage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0101.clickOnRegisterButton()">
+                <span>And Click on Register button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0101.enterAllRequiredInformationAndClickRegisterButton()">
+                <span>When Enter all required information and Click Register button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0101.errorMessageShouldBeDisplayed()">
+                <span>Then Error message should be displayed</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="9"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Negative login test multi scenario</p>
+            <p class="text-sm">
+              <span>11:09:36 PM</span> / <span>00:00:35:471</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Negative login test multi scenario</h5>
+<span class='badge badge-success'>08.27.2024 11:09:36 PM</span>
+<span class='badge badge-danger'>08.27.2024 11:10:12 PM</span>
+<span class='badge badge-default'>00:00:35:471</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="10"><span class="badge log pass-bg mr-2">Pass</span>Leaving email and password part empty</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinitions.StepDef0101.navigateToWebpage()">
+                <span>Given Navigate to Webpage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0201.clickOnLoginButton()">
+                <span>And Click on Login Button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0202.userLeavesEMailAndPasswordPartEmpty()">
+                <span>When User leaves e-mail and password part empty.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0202.clicksOnLoginButtonBelow()">
+                <span>And Clicks on Login Button below</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0202.errorMessageShouldBeDisplayed()">
+                <span>Then Error Message should be displayed</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="18"><span class="badge log pass-bg mr-2">Pass</span>Valid email, empty password</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinitions.StepDef0101.navigateToWebpage()">
+                <span>Given Navigate to Webpage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0201.clickOnLoginButton()">
+                <span>And Click on Login Button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0202.userWritesValidEmailAndLeavePasswordEmpty()">
+                <span>When User writes valid email and leave password empty</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0202.clicksOnLoginButtonBelow()">
+                <span>And Clicks on Login Button below</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0202.errorMessageShouldBeDisplayed()">
+                <span>Then Error Message should be displayed</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="26"><span class="badge log pass-bg mr-2">Pass</span>Empty email, valid password</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinitions.StepDef0101.navigateToWebpage()">
+                <span>Given Navigate to Webpage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0201.clickOnLoginButton()">
+                <span>And Click on Login Button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0202.userWritesValidPasswordButLeavesEmailEmpty()">
+                <span>When User writes valid password but leaves email empty</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0202.clicksOnLoginButtonBelow()">
+                <span>And Clicks on Login Button below</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0202.errorMessageShouldBeDisplayed()">
+                <span>Then Error Message should be displayed</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="34"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Payment test with Check/Money order</p>
+            <p class="text-sm">
+              <span>11:10:12 PM</span> / <span>00:00:20:088</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Payment test with Check/Money order</h5>
+<span class='badge badge-success'>08.27.2024 11:10:12 PM</span>
+<span class='badge badge-danger'>08.27.2024 11:10:32 PM</span>
+<span class='badge badge-default'>00:00:20:088</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=34</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="35"><span class="badge log pass-bg mr-2">Pass</span>Payment test with Check/Money order</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinitions.StepDef0101.navigateToWebpage()">
+                <span>Given Navigate to Webpage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0201.clickOnLoginButton()">
+                <span>And Click on Login Button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0201.userEntersUsernameAndPasswordAndClickOnLoginButton()">
+                <span>When User enters username and password and click on login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0201.userShouldSeeHisMailAddressOnTopOfThePage()">
+                <span>Then User should see his mail address on top of the page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0401.userClicksOnComputerAndSelectsDesktopsInTheLeftNavigationBar()">
+                <span>Given user clicks on Computer and selects Desktops in the left navigation bar</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0401.selectsAModelFromThereAndClicksOnAddToCartBelowTheModel()">
+                <span>And selects a model from there and clicks on Add to Cart below the model</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0401.clicksOnTheAddToCarButton()">
+                <span>And clicks on the Add to Car button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0401.successMessageDisplayed()">
+                <span>And Success message displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0401.userClicksOnShoppingCartAtTheTopOfTheWindow()">
+                <span>When user clicks on Shopping Cart at the top of the window</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0401.userShouldBeAbleToSeeHisOrderInTheShoppingCart()">
+                <span>Then user should be able to see his order in the shopping cart</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0501.theUserClicksOnTheShoppingCartAtTheTopOfTheWindow()">
+                <span>Given the user clicks on the Shopping Cart at the top of the window</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0501.clicksOnTheAcceptTermsButtonAndThenClicksOnCheckout()">
+                <span>And clicks on the accept terms button and then clicks on Checkout</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0502.theUserChoosesHisBillingAddressAndClickOnContinueUntilPaymentMethod()">
+                <span>And the user chooses his billing address and click on Continue until payment method</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0502.userSelectsCheckMoneyOrderFromThePaymentMethodSectionAndClicksContinue()">
+                <span>And User selects Check-Money Order from the payment method section and clicks Continue</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0502.userClicksOnContinueEachStepsAndConfirmHisOrder()">
+                <span>When User clicks on Continue each steps and Confirm his order</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0501.aSuccessMessageForTheOrderShouldBeDisplayed()">
+                <span>Then a success message for the order should be displayed</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="54"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Payment negative test with Credit Card with invalid cart info</p>
+            <p class="text-sm">
+              <span>11:10:32 PM</span> / <span>00:00:19:648</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Payment negative test with Credit Card with invalid cart info</h5>
+<span class='badge badge-success'>08.27.2024 11:10:32 PM</span>
+<span class='badge badge-danger'>08.27.2024 11:10:51 PM</span>
+<span class='badge badge-default'>00:00:19:648</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=54</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="55"><span class="badge log pass-bg mr-2">Pass</span>Payment negative test with Credit Card with invalid cart info</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinitions.StepDef0101.navigateToWebpage()">
+                <span>Given Navigate to Webpage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0201.clickOnLoginButton()">
+                <span>And Click on Login Button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0201.userEntersUsernameAndPasswordAndClickOnLoginButton()">
+                <span>When User enters username and password and click on login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0201.userShouldSeeHisMailAddressOnTopOfThePage()">
+                <span>Then User should see his mail address on top of the page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0401.userClicksOnComputerAndSelectsDesktopsInTheLeftNavigationBar()">
+                <span>Given user clicks on Computer and selects Desktops in the left navigation bar</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0401.selectsAModelFromThereAndClicksOnAddToCartBelowTheModel()">
+                <span>And selects a model from there and clicks on Add to Cart below the model</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0401.clicksOnTheAddToCarButton()">
+                <span>And clicks on the Add to Car button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0401.successMessageDisplayed()">
+                <span>And Success message displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0401.userClicksOnShoppingCartAtTheTopOfTheWindow()">
+                <span>When user clicks on Shopping Cart at the top of the window</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0401.userShouldBeAbleToSeeHisOrderInTheShoppingCart()">
+                <span>Then user should be able to see his order in the shopping cart</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0501.theUserClicksOnTheShoppingCartAtTheTopOfTheWindow()">
+                <span>Given the user clicks on the Shopping Cart at the top of the window</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0501.clicksOnTheAcceptTermsButtonAndThenClicksOnCheckout()">
+                <span>And clicks on the accept terms button and then clicks on Checkout</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0502.theUserChoosesHisBillingAddressAndClickOnContinueUntilPaymentMethod()">
+                <span>And the user chooses his billing address and click on Continue until payment method</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0502.userSelectsCreditCartFromThePaymentMethodSectionAndClicksContinue()">
+                <span>And User selects Credit Cart from the payment method section and clicks Continue</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0502.userEntersHisCartInformationAndClicksOnContinue()">
+                <span>When User enters his cart information and clicks on Continue</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0502.paymentTypeShouldNotBeAccepted()">
+                <span>Then payment type should not be accepted</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="74"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Payment test with Purchase Order</p>
+            <p class="text-sm">
+              <span>11:10:51 PM</span> / <span>00:00:19:520</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Payment test with Purchase Order</h5>
+<span class='badge badge-success'>08.27.2024 11:10:51 PM</span>
+<span class='badge badge-danger'>08.27.2024 11:11:11 PM</span>
+<span class='badge badge-default'>00:00:19:520</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=74</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="75"><span class="badge log pass-bg mr-2">Pass</span>Payment test with Purchase Order</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinitions.StepDef0101.navigateToWebpage()">
+                <span>Given Navigate to Webpage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0201.clickOnLoginButton()">
+                <span>And Click on Login Button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0201.userEntersUsernameAndPasswordAndClickOnLoginButton()">
+                <span>When User enters username and password and click on login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0201.userShouldSeeHisMailAddressOnTopOfThePage()">
+                <span>Then User should see his mail address on top of the page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0401.userClicksOnComputerAndSelectsDesktopsInTheLeftNavigationBar()">
+                <span>Given user clicks on Computer and selects Desktops in the left navigation bar</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0401.selectsAModelFromThereAndClicksOnAddToCartBelowTheModel()">
+                <span>And selects a model from there and clicks on Add to Cart below the model</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0401.clicksOnTheAddToCarButton()">
+                <span>And clicks on the Add to Car button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0401.successMessageDisplayed()">
+                <span>And Success message displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0401.userClicksOnShoppingCartAtTheTopOfTheWindow()">
+                <span>When user clicks on Shopping Cart at the top of the window</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0401.userShouldBeAbleToSeeHisOrderInTheShoppingCart()">
+                <span>Then user should be able to see his order in the shopping cart</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0501.theUserClicksOnTheShoppingCartAtTheTopOfTheWindow()">
+                <span>Given the user clicks on the Shopping Cart at the top of the window</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0501.clicksOnTheAcceptTermsButtonAndThenClicksOnCheckout()">
+                <span>And clicks on the accept terms button and then clicks on Checkout</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0502.theUserChoosesHisBillingAddressAndClickOnContinueUntilPaymentMethod()">
+                <span>And the user chooses his billing address and click on Continue until payment method</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0502.userSelectsPurchaseOrderFromThePaymentMethodSectionAndClicksContinue()">
+                <span>And User selects Purchase Order from the payment method section and clicks Continue</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0502.userEntersHisInformationAndClicksOnContinue()">
+                <span>When User enters his  information and clicks on Continue</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0501.aSuccessMessageForTheOrderShouldBeDisplayed()">
+                <span>Then a success message for the order should be displayed</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="94"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Community Pool survey</p>
+            <p class="text-sm">
+              <span>11:11:11 PM</span> / <span>00:00:12:368</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Community Pool survey</h5>
+<span class='badge badge-success'>08.27.2024 11:11:11 PM</span>
+<span class='badge badge-danger'>08.27.2024 11:11:23 PM</span>
+<span class='badge badge-default'>00:00:12:368</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=94</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="95"><span class="badge log pass-bg mr-2">Pass</span>Community Pool survey</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinitions.StepDef0101.navigateToWebpage()">
+                <span>Given Navigate to Webpage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0201.clickOnLoginButton()">
+                <span>And Click on Login Button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0201.userEntersUsernameAndPasswordAndClickOnLoginButton()">
+                <span>When User enters username and password and click on login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0201.userShouldSeeHisMailAddressOnTopOfThePage()">
+                <span>Then User should see his mail address on top of the page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0601.userSelectsAnOptionInTheCommunityPoll()">
+                <span>Given User selects an option in the Community poll</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0601.clicksOnVoteButton()">
+                <span>When Clicks on Vote button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0601.userShouldBeAbleToSeeHowManyPeopleVotedBefore()">
+                <span>Then user should be able to see how many people voted before</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="105"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Using coupon code Negative test</p>
+            <p class="text-sm">
+              <span>11:11:23 PM</span> / <span>00:00:15:650</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Using coupon code Negative test</h5>
+<span class='badge badge-success'>08.27.2024 11:11:23 PM</span>
+<span class='badge badge-danger'>08.27.2024 11:11:39 PM</span>
+<span class='badge badge-default'>00:00:15:650</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=105</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="106"><span class="badge log pass-bg mr-2">Pass</span>Using coupon code Negative test</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinitions.StepDef0101.navigateToWebpage()">
+                <span>Given Navigate to Webpage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0201.clickOnLoginButton()">
+                <span>And Click on Login Button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0201.userEntersUsernameAndPasswordAndClickOnLoginButton()">
+                <span>When User enters username and password and click on login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0201.userShouldSeeHisMailAddressOnTopOfThePage()">
+                <span>Then User should see his mail address on top of the page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0401.userClicksOnComputerAndSelectsDesktopsInTheLeftNavigationBar()">
+                <span>Given user clicks on Computer and selects Desktops in the left navigation bar</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0401.selectsAModelFromThereAndClicksOnAddToCartBelowTheModel()">
+                <span>And selects a model from there and clicks on Add to Cart below the model</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0401.clicksOnTheAddToCarButton()">
+                <span>And clicks on the Add to Car button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0401.successMessageDisplayed()">
+                <span>Then Success message displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0501.theUserClicksOnTheShoppingCartAtTheTopOfTheWindow()">
+                <span>Given the user clicks on the Shopping Cart at the top of the window</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0701.userEntersHisPromoCode()">
+                <span>When User enters his promo code</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0701.clicksOnApplyCouponButton()">
+                <span>And clicks on Apply Coupon button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0701.errorMessageShouldBeDisplayed()">
+                <span>Then error message should be displayed</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="121"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Check and Obtain order documents</p>
+            <p class="text-sm">
+              <span>11:11:39 PM</span> / <span>00:00:12:838</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Check and Obtain order documents</h5>
+<span class='badge badge-success'>08.27.2024 11:11:39 PM</span>
+<span class='badge badge-danger'>08.27.2024 11:11:52 PM</span>
+<span class='badge badge-default'>00:00:12:838</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=121</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="122"><span class="badge log pass-bg mr-2">Pass</span>Check and Obtain order documents</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinitions.StepDef0101.navigateToWebpage()">
+                <span>Given Navigate to Webpage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0201.clickOnLoginButton()">
+                <span>And Click on Login Button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0201.userEntersUsernameAndPasswordAndClickOnLoginButton()">
+                <span>When User enters username and password and click on login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0201.userShouldSeeHisMailAddressOnTopOfThePage()">
+                <span>Then User should see his mail address on top of the page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0801.userClicksOnHisMailAddressOnTopNavigationBarToSeeHisProfile()">
+                <span>Given User clicks on his mail address on top navigation bar to see his profile</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0801.clicksOnOrdersButtonOnLeftNavigationBar()">
+                <span>And clicks on Orders button on left navigation bar</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0801.clicksOnDetailsButtonToInspectHisLastOrder()">
+                <span>When clicks on Details button to inspect his last order</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0801.orderStatusShouldBeVisible()">
+                <span>Then Order status should be visible</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.StepDef0801.pdfInvoiceButtonShouldBeClickable()">
+                <span>And PDF Invoice button should be clickable</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>10</span>
+</span>
+<p class="name">@RegressionTest</p>
+<p class="duration text-sm">10 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@RegressionTest</h4>
+<span status="pass" class='badge log pass-bg'>10 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:09:23 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>User successfully creates an account on akakce.com</a>
+<div class="">
+<span class="badge badge-default">Create user account negative test with using used mail.User successfully creates an account on akakce.com</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:09:36 PM</td>
+<td>
+<a href="#" class="linked" test-id='9' id='10'>Leaving email and password part empty</a>
+<div class="">
+<span class="badge badge-default">Negative login test multi scenario.Leaving email and password part empty</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:09:48 PM</td>
+<td>
+<a href="#" class="linked" test-id='9' id='18'>Valid email, empty password</a>
+<div class="">
+<span class="badge badge-default">Negative login test multi scenario.Valid email, empty password</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:10:00 PM</td>
+<td>
+<a href="#" class="linked" test-id='9' id='26'>Empty email, valid password</a>
+<div class="">
+<span class="badge badge-default">Negative login test multi scenario.Empty email, valid password</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:10:12 PM</td>
+<td>
+<a href="#" class="linked" test-id='34' id='35'>Payment test with Check/Money order</a>
+<div class="">
+<span class="badge badge-default">Payment test with Check/Money order.Payment test with Check/Money order</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:10:32 PM</td>
+<td>
+<a href="#" class="linked" test-id='54' id='55'>Payment negative test with Credit Card with invalid cart info</a>
+<div class="">
+<span class="badge badge-default">Payment negative test with Credit Card with invalid cart info.Payment negative test with Credit Card with invalid cart info</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:10:51 PM</td>
+<td>
+<a href="#" class="linked" test-id='74' id='75'>Payment test with Purchase Order</a>
+<div class="">
+<span class="badge badge-default">Payment test with Purchase Order.Payment test with Purchase Order</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:11:11 PM</td>
+<td>
+<a href="#" class="linked" test-id='94' id='95'>Community Pool survey</a>
+<div class="">
+<span class="badge badge-default">Community Pool survey.Community Pool survey</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:11:23 PM</td>
+<td>
+<a href="#" class="linked" test-id='105' id='106'>Using coupon code Negative test</a>
+<div class="">
+<span class="badge badge-default">Using coupon code Negative test.Using coupon code Negative test</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:11:39 PM</td>
+<td>
+<a href="#" class="linked" test-id='121' id='122'>Check and Obtain order documents</a>
+<div class="">
+<span class="badge badge-default">Check and Obtain order documents.Check and Obtain order documents</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Aug 27, 2024 11:09:22 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Aug 27, 2024 11:11:52 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>8</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>0</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'>
+<b>8</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='0%'><b>0</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'><b>10</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'><b>95</b> steps passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Create user account negative test with using used mail":13.172,"Negative login test multi scenario":35.471,"Payment test with Check/Money order":20.088,"Payment negative test with Credit Card with invalid cart info":19.648,"Payment test with Purchase Order":19.52,"Community Pool survey":12.368,"Using coupon code Negative test":15.65,"Check and Obtain order documents":12.838
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@RegressionTest</td>
+<td>10</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>Windows Username</td>
+<td>btaba</td>
+</tr>
+<tr>
+<td>Time Zone</td>
+<td>Europe/Belgrade</td>
+</tr>
+<tr>
+<td>Username</td>
+<td>Burak T.</td>
+</tr>
+<tr>
+<td>Application Name</td>
+<td>DemoWebShop</td>
+</tr>
+<tr>
+<td>Operating System Info</td>
+<td>Windows 11</td>
+</tr>
+<tr>
+<td>Department</td>
+<td>QA</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 8,
+failParent: 0,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 10,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 95,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
