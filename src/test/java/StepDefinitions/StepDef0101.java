@@ -29,7 +29,7 @@ public class StepDef0101 {
         dc.myJSClick(dc.selectBoxMale);
         dc.mySendKeys(dc.nameInput,"bob");
         dc.mySendKeys(dc.lastNameInput,"tester");
-        dc.mySendKeys(dc.emailInput,"testerbob@gmail.com");
+        dc.mySendKeys(dc.emailInput,"testerbob1@gmail.com");
         dc.mySendKeys(dc.passwordInput,"123qwe123");
         dc.mySendKeys(dc.confirmPasswordInput,"123qwe123");
         dc.myJSClick(dc.registerConfirmButton);
