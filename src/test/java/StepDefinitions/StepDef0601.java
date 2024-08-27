@@ -18,8 +18,8 @@ public class StepDef0601 {
         dc.myJSClick(dc.voteButton);
     }
 
-    @Then("user should be able to see how many people veted before")
-    public void userShouldBeAbleToSeeHowManyPeopleVetedBefore() {
-        dc.verifyContainsText(dc.votingCount,"Vote(s)");
+    @Then("user should be able to see how many people voted before")
+    public void userShouldBeAbleToSeeHowManyPeopleVotedBefore() {
+        dc.verifyContainsText(dc.votingCount,"vote(s)");
     }
 }
