@@ -6,6 +6,7 @@ Feature: Check and Obtain order documents
     When User enters username and password and click on login button
     Then User should see his mail address on top of the page
 
+  @RegressionTest
   Scenario:
     Given User clicks on his mail address on top navigation bar to see his profile
     And clicks on Orders button on left navigation bar

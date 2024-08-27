@@ -6,6 +6,7 @@ Feature: Using coupon code Negative test
     When User enters username and password and click on login button
     Then User should see his mail address on top of the page
 
+    @RegressionTest
     Scenario:
       Given the user clicks on the Shopping Cart at the top of the window
       When User enters his promo code

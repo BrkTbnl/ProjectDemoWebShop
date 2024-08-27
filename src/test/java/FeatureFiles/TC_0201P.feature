@@ -1,5 +1,6 @@
 Feature: Successful log-in
 
+  @SmokeTest
   Scenario:
     Given Navigate to Webpage
     And Click on Login Button

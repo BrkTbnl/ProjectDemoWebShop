@@ -1,5 +1,6 @@
 Feature: Create user account
 
+  @SmokeTest
   Scenario: User successfully creates an account on akakce.com
     Given Navigate to Webpage
     And Click on Register button

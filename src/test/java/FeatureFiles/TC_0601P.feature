@@ -6,6 +6,7 @@ Feature: Community Pool survey
     When User enters username and password and click on login button
     Then User should see his mail address on top of the page
 
+    @RegressionTest
     Scenario:
       Given User selects an option in the Community poll
       When Clicks on Vote button
