@@ -10,4 +10,4 @@ Feature: Community Pool survey
     Scenario:
       Given User selects an option in the Community poll
       When Clicks on Vote button
-      Then user should be able to see how many people veted before
+      Then user should be able to see how many people voted before
