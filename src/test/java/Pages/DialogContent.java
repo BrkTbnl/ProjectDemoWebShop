@@ -142,6 +142,18 @@ public class DialogContent extends Parent {
     @FindBy(xpath = "//input[@id=\"vote-poll-1\"]")
     public WebElement voteButton;
 
+    @FindBy(xpath = "//input[@class=\"discount-coupon-code\"]")
+    public WebElement discountCode;
+
+    @FindBy(xpath = "//input[@class=\"button-2 apply-discount-coupon-code-button\"]")
+    public WebElement applyDiscountCode;
+
+    @FindBy(xpath = "//div[@class=\"message\"]")
+    public WebElement messageText;
+
+
+
+
 
     public WebElement getWebElement(String strElement) {
         switch (strElement) {
