@@ -17,7 +17,7 @@ public class StepDef0201 {
 
     @When("User enters username and password and click on login button")
     public void userEntersUsernameAndPasswordAndClickOnLoginButton() {
-        dc.mySendKeys(dc.emailInput,"testerbob1@gmail.com");
+        dc.mySendKeys(dc.emailInput,"testerbob6@gmail.com");
         dc.mySendKeys(dc.passwordInput,"123qwe123");
         dc.myJSClick(dc.loginButton);
     }
