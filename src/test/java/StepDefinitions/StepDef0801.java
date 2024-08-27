@@ -7,6 +7,7 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.testng.Assert;
 
 public class StepDef0801 {
     TopNavigation tn = new TopNavigation();
@@ -23,13 +24,18 @@ public class StepDef0801 {
         ln.myJSClick(ln.ordersButton);
     }
 
-    @When("clics on Details button to inspect his last order")
-    public void clicsOnDetailsButtonToInspectHisLastOrder() {
+    @When("clicks on Details button to inspect his last order")
+    public void clicksOnDetailsButtonToInspectHisLastOrder() {
         dc.myJSClick(dc.orderDetails);
     }
 
     @Then("Order status should be visible")
     public void orderStatusShouldBeVisible() {
         dc.verifyContainsText(dc.orderStatus,"Pending");
+    }
+
+    @And("PDF Invoice button should be clickable")
+    public void pdfInvoiceButtonShouldBeClickable() {
+        Assert.assertTrue(dc.pdfOrderButton.isDisplayed());
     }
 }

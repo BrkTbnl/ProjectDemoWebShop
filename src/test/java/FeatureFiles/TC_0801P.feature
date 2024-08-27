@@ -9,5 +9,6 @@ Feature: Check and Obtain order documents
   Scenario:
     Given User clicks on his mail address on top navigation bar to see his profile
     And clicks on Orders button on left navigation bar
-    When clics on Details button to inspect his last order
+    When clicks on Details button to inspect his last order
     Then Order status should be visible
+    And PDF Invoice button should be clickable
