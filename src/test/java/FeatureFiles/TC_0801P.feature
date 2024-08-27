@@ -7,7 +7,7 @@ Feature: Check and Obtain order documents
     Then User should see his mail address on top of the page
 
   @RegressionTest
-  Scenario:
+  Scenario:Check and Obtain order documents
     Given User clicks on his mail address on top navigation bar to see his profile
     And clicks on Orders button on left navigation bar
     When clicks on Details button to inspect his last order

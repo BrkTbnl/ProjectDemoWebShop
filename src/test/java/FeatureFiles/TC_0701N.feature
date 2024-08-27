@@ -11,7 +11,7 @@ Feature: Using coupon code Negative test
     Then Success message displayed
 
     @RegressionTest
-    Scenario:
+    Scenario:Using coupon code Negative test
       Given the user clicks on the Shopping Cart at the top of the window
       When User enters his promo code
       And clicks on Apply Coupon button

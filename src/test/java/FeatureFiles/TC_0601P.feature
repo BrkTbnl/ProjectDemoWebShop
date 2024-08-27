@@ -7,7 +7,7 @@ Feature: Community Pool survey
     Then User should see his mail address on top of the page
 
     @RegressionTest
-    Scenario:
+    Scenario:Community Pool survey
       Given User selects an option in the Community poll
       When Clicks on Vote button
       Then user should be able to see how many people voted before

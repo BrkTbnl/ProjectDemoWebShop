@@ -1,7 +1,7 @@
 Feature: Successful log-in
 
   @SmokeTest
-  Scenario:
+  Scenario: Successful log-in
     Given Navigate to Webpage
     And Click on Login Button
     When User enters username and password and click on login button

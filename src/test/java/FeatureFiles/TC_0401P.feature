@@ -8,7 +8,7 @@ Feature: Adding item to shopping cart
 
 
   @SmokeTest
-  Scenario:
+  Scenario:Adding item to shopping cart
     Given user clicks on Computer and selects Desktops in the left navigation bar
     And selects a model from there and clicks on Add to Cart below the model
     And clicks on the Add to Car button

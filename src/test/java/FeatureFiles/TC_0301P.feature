@@ -7,6 +7,6 @@ Feature: Successful Logout
     Then User should see his mail address on top of the page
 
   @SmokeTest
-  Scenario:
+  Scenario:Successful Logout
     When Click on Log out Button
     Then User should not be able to see his mail on top of the page

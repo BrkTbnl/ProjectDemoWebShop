@@ -13,7 +13,7 @@ Feature: Payment negative test with Credit Card with invalid cart info
     Then user should be able to see his order in the shopping cart
 
   @RegressionTest
-  Scenario:
+  Scenario:Payment negative test with Credit Card with invalid cart info
     Given the user clicks on the Shopping Cart at the top of the window
     And clicks on the accept terms button and then clicks on Checkout
     And the user chooses his billing address and click on Continue until payment method
