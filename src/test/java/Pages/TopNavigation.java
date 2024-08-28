@@ -27,7 +27,11 @@ public class TopNavigation extends Parent{
 
     public WebElement getWebElement(String strElement) {
         switch (strElement){
-
+            case "Register": return this.registerButton;
+            case "Login": return this.loginButton;
+            case "Account": return this.customerInfoLabel;
+            case "Logout": return this.logoutButton;
+            case "ShoppingCart": return this.ShoppingCartButton;
         }
         return null;
     }

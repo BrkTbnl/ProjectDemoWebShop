@@ -158,6 +158,14 @@ public class DialogContent extends Parent {
 
     public WebElement getWebElement(String strElement) {
         switch (strElement) {
+            case "Gender": return this.selectBoxMale;
+            case "Name": return this.nameInput;
+            case "LastName": return this.lastNameInput;
+            case "Email": return this.emailInput;
+            case "Password": return this.passwordInput;
+            case "Password Confirm": return this.confirmPasswordInput;
+            case "Register button": return this.registerConfirmButton;
+
 
         }
         return null;
