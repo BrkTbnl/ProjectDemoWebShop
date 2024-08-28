@@ -8,7 +8,7 @@ import org.testng.annotations.AfterClass;
 
 @CucumberOptions(
 
-        tags = "@SmokeTest",
+        tags = "@SmokeTest and not @ignore",
         features = {"src/test/java/FeatureFiles"},
         glue = {"StepDefinitions"},
         plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}

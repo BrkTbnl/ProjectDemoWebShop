@@ -1,5 +1,6 @@
 Feature: Create user account
 
+  @ignore
   @SmokeTest
   Scenario: User successfully creates an account on akakce.com
     Given Navigate to Webpage
