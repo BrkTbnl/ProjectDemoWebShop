@@ -165,6 +165,7 @@ public class DialogContent extends Parent {
             case "Password": return this.passwordInput;
             case "Password Confirm": return this.confirmPasswordInput;
             case "Register button": return this.registerConfirmButton;
+            case "Login button": return this.loginButton;
 
 
         }
