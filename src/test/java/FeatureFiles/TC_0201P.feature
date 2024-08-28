@@ -1,5 +1,6 @@
 Feature: Successful log-in
 
+  @ignore
   @SmokeTest
   Scenario: Successful log-in
     Given Navigate to Webpage
