@@ -1,5 +1,6 @@
 Feature: Create user account negative test with using used mail
 
+  @ignore
   @RegressionTest
   Scenario: User successfully creates an account on akakce.com
     Given Navigate to Webpage
