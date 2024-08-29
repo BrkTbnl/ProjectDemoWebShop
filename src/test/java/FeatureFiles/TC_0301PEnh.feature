@@ -16,5 +16,5 @@ Feature: Successful Logout
   @SmokeTest
   Scenario: Successful logout
     When Click on element in TopNavigation
-    |Logout|
+      | Logout |
     Then User should not be able to see his mail on top of the page

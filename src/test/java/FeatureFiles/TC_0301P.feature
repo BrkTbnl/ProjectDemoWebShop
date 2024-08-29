@@ -6,6 +6,7 @@ Feature: Successful Logout
     When User enters username and password and click on login button
     Then User should see his mail address on top of the page
 
+  @ignore
   @SmokeTest
   Scenario:Successful Logout
     When Click on Log out Button
