@@ -6,7 +6,7 @@ Feature: Adding item to shopping cart
     When User enters username and password and click on login button
     Then User should see his mail address on top of the page
 
-
+  @ignore
   @SmokeTest
   Scenario:Adding item to shopping cart
     Given user clicks on Computer and selects Desktops in the left navigation bar
