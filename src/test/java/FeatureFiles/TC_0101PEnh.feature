@@ -16,5 +16,4 @@ Feature: Create user account
       | Password Confirm | 123qwe123            |
     And Click on element in DialogContent
       | Register button |
-
     Then Success message should be displayed
