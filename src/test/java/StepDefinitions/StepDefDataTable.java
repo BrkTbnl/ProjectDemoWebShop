@@ -1,9 +1,11 @@
 package StepDefinitions;
 
 import Pages.DialogContent;
+import Pages.LeftNavigation;
 import Pages.TopNavigation;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebElement;
 
@@ -13,6 +15,7 @@ public class StepDefDataTable {
 
     TopNavigation tn = new TopNavigation();
     DialogContent dc = new DialogContent();
+    LeftNavigation ln = new LeftNavigation();
 
     @And("Click on element in TopNavigation")
     public void clickOnElementInTopNavigation(DataTable links) {
@@ -48,6 +51,18 @@ public class StepDefDataTable {
             WebElement webElement = dc.getWebElement(link);
             dc.myJSClick(webElement);
 
+        }
+    }
+
+    @Given("Click on element in LeftNavBar")
+    public void clickOnElementInLeftNavBar(DataTable dataTable) {
+
+        List<String> linksList = dataTable.asList(String.class);
+
+        for (int i = 0; i < linksList.size(); i++) {
+            String link = linksList.get(i);
+            WebElement webElement = ln.getWebElement(link);
+            ln.myJSClick(webElement);
         }
     }
 }
