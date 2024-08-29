@@ -15,5 +15,4 @@ Feature:Create user account negative test with using used mail
       | Password Confirm | 123qwe123            |
     And Click on element in DialogContent
       | Register button |
-
     Then Error message should be displayed
