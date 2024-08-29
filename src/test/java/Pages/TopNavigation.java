@@ -32,6 +32,7 @@ public class TopNavigation extends Parent{
             case "Account": return this.customerInfoLabel;
             case "Logout": return this.logoutButton;
             case "ShoppingCart": return this.ShoppingCartButton;
+
         }
         return null;
     }

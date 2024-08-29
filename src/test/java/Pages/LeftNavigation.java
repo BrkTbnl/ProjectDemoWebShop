@@ -24,7 +24,9 @@ public class LeftNavigation extends Parent{
 
     public WebElement getWebElement(String strElement){
         switch (strElement){
-
+            case "Computers": return this.computerButton;
+            case "Desktops": return this.desktopsButton;
+            case "Orders": return this.ordersButton;
         }
         return null;
     }
