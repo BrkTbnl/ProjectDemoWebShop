@@ -65,4 +65,15 @@ public class StepDefDataTable {
             ln.myJSClick(webElement);
         }
     }
+
+    @And("Select item from select box")
+    public void selectItemFromSelectBox(DataTable dataTable) {
+        List<List<String>> items = dataTable.asLists(String.class);
+        for (int i = 0; i < items.size(); i++) {
+            List<String> item = items.get(i);
+            WebElement webElement = dc.getWebElement(item.get(0));
+            String text = item.get(1);
+            dc.mySelectBox(webElement,text);
+        }
+    }
 }
