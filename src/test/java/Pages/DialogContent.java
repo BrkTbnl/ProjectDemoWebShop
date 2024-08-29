@@ -2,6 +2,7 @@ package Pages;
 
 import Utilities.GWD;
 
+import jdk.nashorn.internal.ir.CaseNode;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -168,6 +169,19 @@ public class DialogContent extends Parent {
             case "Login button": return this.loginButton;
             case "HighEndPc": return this.computerSelectButton;
             case "AddToCart": return this.addToCartButton;
+            case "AcceptTerms": return this.termsOfService;
+            case"CheckOut": return this.checkoutButton;
+            case "Country": return this.countrySelectBox;
+            case "City": return this.cityInput;
+            case "Address": return this.addressInput;
+            case "Zip": return this.zipCodeInput;
+            case "Phone": return this.phoneNumInput;
+            case "Continue Billing": return this.billingContinueButton;
+            case "Continue Shipping": return this.shippingContinueButton;
+            case "Continue Shipping Method": return this.shippingMethodContinueButton;
+            case "Continue Payment Method": return this.paymentMethodContinueButton;
+            case "Continue Payment Info": return this.paymentInfoContinueButton;
+            case "Confirm Order": return this.confirmOrderButton;
 
 
 
