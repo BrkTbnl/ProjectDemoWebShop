@@ -24,7 +24,7 @@ Feature: Negative login test multi scenario
     Then Error Message should be displayed
 
   @RegressionTest
-  Scenario:  valid email, valid password
+  Scenario:  invalid email, invalid password
     Given User sends the keys in DialogContent
       | Email    | testerbobT@gmail.com |
       | Password | test                 |
